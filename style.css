@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root{
+    --text-dark:#171717;
+    --text-light:#525252;
+    --extra-light:#a3a3a3;
+    --white:#fff;
+    --max-width: 1200px;
+    --header-font: "Merriweather", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: .75rem 1.5rem;
+    outline: none;
+    border:none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--text-dark);
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--text-light);
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f4e8;
+}
+
+.header {
+    min-height: 800px;
+    background-image: url(images/miriam-landscape.jpeg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change 30s infinite ease-in-out;
+
+}
+
+
+
+@keyframes change {
+    0% {
+        background-image: url(images/miriam-landscape.jpeg);
+    }
+    20% {
+        background-image: url(images/Gallery/dan-landscape.jpeg);
+    }
+    40% {
+        background-image: url(images/Gallery/canva.webp);
+    }
+    60% {
+        background-image: url(images/miriam-landscape.jpeg);
+    }
+    80% {
+        background-image: url(images/Gallery/dan-landscape.jpeg);
+    }
+    100% {
+        background-image: url(images/Gallery/canva.webp);
+    }
+}
+
+
+
+img {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    z-index: 9;
+}
+
+.nav_header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+.nav_logo img {
+    max-width: 70px;
+}
+
+.nav_menu_btn {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: transparent;
+    transform: translateY(-150%);
+    transition: .5s;
+    z-index: -1;
+}
+
+.nav_links.open {
+    transform:translateY(0);
+    background-color: var(--text-dark);
+}
+
+
+.nav_links .nav_logo {
+    display: none;
+}
+
+.nav_links a {
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav_links a:hover {
+    border-color: var(--white);
+}
+
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.section_header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.name_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem 10rem;
+}
+
+.container {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+    grid-template-rows: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+}
+
+h2 {
+    margin-top: 2rem;
+    list-style: none;
+    grid-area: 1 / 19 / 2 / 43;
+    font-size: 32px;
+    font-display: center;
+}
+
+.green-bg {
+    grid-area: 3 / 7 / 17 / 14;
+    background-color: #30463f;
+    z-index: -3;
+}
+
+.rosie {
+    grid-area: 4 / 8 / 20 / 16;
+    z-index: -2;
+}
+
+.floral {
+    grid-area: 11 / 5 / 21 / 12 ;
+    z-index: -1;
+}
+
+.maria {
+    grid-area: 12 / 6 / 22 / 14;
+}
+
+.cheri {
+    grid-area: 6 / 46 / 18 / 54 ;
+}
+
+.terracotta-bg {
+    grid-area: 7 / 47 / 19 / 55 ;
+    background-color: #b27357;
+    z-index: -1;
+}
+
+p {
+    grid-area: 6 / 19 / 20 / 43 ;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+
+.love-notes {
+    background-image: url(images/flowerprint.jpg);
+    background-repeat: repeat-x;
+}
+
+.card {
+    width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+}
+
+@media (width > 768px) {
+    .header {
+        min-height: 650px;
+    }
+
+    nav {
+        padding: 2rem 1rem;
+        position: static;
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav_header {
+        display: none;
+    }
+
+    .nav_links {
+        padding: 0;
+        width: 100%;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_links .nav_logo {
+        display: block;
+    }
+
+    .nav_links .nav_logo img {
+        max-width: 150px;
+    }
+}
+
+@media (width > 1024px) {
+    .header {
+        min-height: 700px;
+    }
+
+    .nav_header {
+        display: none;
+    }
+}

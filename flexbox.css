@@ -1,0 +1,51 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+    grid-template-rows: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+}
+
+h2 {
+    list-style: none;
+    grid-area: 1 / 15 / 2 / 40;
+    font-size: 32px;
+    font-display: center;
+}
+
+.green-bg {
+    grid-area: 4 / 6 / 17 / 13;
+    background-color: #30463f;
+    z-index: -3;
+}
+
+.rosie {
+    grid-area: 5 / 7 / 21 / 14;
+    z-index: -2;
+}
+
+.floral {
+    grid-area: 12 / 3 / 24 / 10 ;
+    z-index: -1;
+}
+
+.maria {
+    grid-area: 13 / 4;
+}
+
+.cheri {
+    grid-area: 11 / 32;
+}
+
+.terracotta-bg {
+    grid-area: 12 / 33 / 24 / 41 ;
+    background-color: #b27357;
+    z-index: -1;
+}
+
+
